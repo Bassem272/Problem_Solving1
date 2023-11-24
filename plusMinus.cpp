@@ -24,3 +24,16 @@ int main(){
     cout<<static_cast<float>(zero)/n<<endl;
 return 0;
 }
+
+
+
+10    
+1 42    
+2       
+1 14    
+1 28    
+3     
+1 60    
+1 78    
+2       
+2       
