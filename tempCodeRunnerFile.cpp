@@ -1,11 +1,8 @@
+for(auto it = s.begin() ; it != s.end(); it++){
 
-10    
-1 42    
-2       
-1 14    
-1 28    
-3     
-1 60    
-1 78    
-2       
-2   
+//         m[*it]++;
+// }
+// for(auto it = m.begin() ; it != m.end(); it++){
+
+//         cout << it->first << " " << it->second << endl;
+// }
