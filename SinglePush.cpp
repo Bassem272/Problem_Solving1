@@ -21,16 +21,49 @@ public:
         {
             cin >> i;
         }
-        int diff=0;
+        int diff1 = 0, count = 0;
+        int diff2 = 0;
+        int diff3 = 0;
+        int m;
+        bool flag = true;
+
         for (int i = 0; i < n; i++)
         {
-            for (int j = 0; j < n; j++)
+            if (v1[i] != v2[i])
             {
-                if (v1[i] != v2[j])
+                if (v1[i] > v2[i])
                 {
-                    diff = abs(v1[i] - v2[j]);
+                    break;
                 }
+                diff1 = v2[i] - v1[i];
+                m = i;
+                break;
             }
+        }
+        for (int i = m; i < n; i++)
+        {
+            if (v1[i] == v2[i])
+            {
+                break;
+            };
+            v1[i] += diff1;
+        }
+        for (int i = 0; i < n; i++)
+        {
+            if (v1[i] != v2[i])
+            {
+                flag = false;
+                break;
+            }
+        }
+
+        if (flag)
+        {
+            cout << "YES" << endl;
+        }
+        else
+        {
+            cout << "NO" << endl;
         }
     }
 };
