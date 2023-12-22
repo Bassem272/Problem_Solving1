@@ -1,2 +1,3 @@
-7 
-// 1 2 4 5 7 8 10
+if(low>h){
+//     cout<<"Element not found"<<endl;
+// }
