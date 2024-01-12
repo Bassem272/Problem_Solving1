@@ -6,7 +6,14 @@ void solve(int N)
 {
     if (N == 0)
         return;
-    cout << N << " ";
+    if (N == 1)
+    {
+        cout << N;
+    }
+    else
+    {
+        cout << N << " ";
+    }
     solve(N - 1);
 }
 int main()

@@ -2,18 +2,18 @@
 
 using namespace std;
 
-void solve(int N)
+void solve(int i, int N)
 {
-    if (N == 0)
+    cout << i << endl;
+    if (i == N)
         return;
-    cout << N << " ";
-    solve(N - 1);
+    solve(i + 1, N);
 }
 int main()
 {
-
+    int i = 1;
     int N;
     cin >> N;
-    solve(N);
+    solve(i, N);
     return 0; // return 0 means the program is exited successfully
 }
