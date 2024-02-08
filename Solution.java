@@ -1,0 +1,16 @@
+
+// can jump method
+class Solution {
+    public boolean canJump(int[] nums) {
+        int destination=nums.length-1; //making the destination as the last index of the array
+        for(int i=nums.length-2;i>=0;i--){ //iterating from the second last index 
+        //if the current index + the value at that index is greater or equal to the destination
+        //then just change your destination to the index
+            if(i+nums[i]>=destination){  
+                destination=i;
+            }
+        }
+        //if the final index reaches 0 that means we reached end of the array thus function return true
+        return destination==0; 
+    }
+}
